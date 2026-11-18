@@ -59,7 +59,7 @@ import{n as e,t}from"./jsx-runtime-By92Zj0g.js";var n=e=>e.replace(/([a-z0-9])([
       input, textarea, select { font-size: 16px; }
       .br-laptop { display: none; }
       [data-kop="klein"] [data-kopmenu] { margin-top: 6px; }
-      [data-kop="klein"] [data-kopmenu] button { padding-top: 4px; padding-bottom: 4px; font-size: 11px; line-height: 1.15; }
+      [data-kop="klein"] [data-kopmenu] button { padding-top: 5px; padding-bottom: 5px; font-size: 11px; line-height: 1.15; min-height: 24px; }
       @media (min-width: 640px) {
         .br-laptop { display: inline; }
         .br-mobiel { display: none; }

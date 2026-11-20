@@ -3,11 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      // Punt 15: iPhone en iPad zoomen niet automatisch in bij een typeveld met tekst kleiner dan 16 px.
+      // Inzoomen met twee vingers blijft op iOS werken; Android zoomt bij een typeveld niet in en krijgt dit niet.
+      if (/iP(hone|ad|od)/.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1))
+        document.querySelector('meta[name="viewport"]').setAttribute("content", "width=device-width, initial-scale=1.0, maximum-scale=1.0");
+    </script>
     <meta name="robots" content="noindex" />
     <title>VoetbalPoule</title>
-    <script type="module" crossorigin src="/12/assets/index-DKASva4m.js"></script>
+    <script type="module" crossorigin src="/12/assets/index-BjskMUXJ.js"></script>
     <link rel="modulepreload" crossorigin href="/12/assets/jsx-runtime-By92Zj0g.js">
-    <link rel="stylesheet" crossorigin href="/12/assets/index-yCYI6KSI.css">
+    <link rel="stylesheet" crossorigin href="/12/assets/index-DypRTHHW.css">
   </head>
   <body>
     <div id="root"></div>
